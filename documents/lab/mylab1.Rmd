@@ -2,7 +2,11 @@
 title: "mylab1"
 author: "chenpeng"
 date: "2024-07-01"
-output: html_document
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    theme: lumen
 ---
 
 ```{r setup, include=FALSE}

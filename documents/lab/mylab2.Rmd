@@ -1,0 +1,23 @@
+---
+title: "mylab2"
+author: "chenpeng"
+date: "2024-07-03"
+output:
+  pdf_document:
+    latex_engine: xelatex
+    toc: true
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: true
+    theme: lumen
+header-includes: 
+  - \usepackage{ctex}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+options(htmltools.dir.version = FALSE)
+library(tidyverse)
+```

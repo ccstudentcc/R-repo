@@ -3,19 +3,22 @@ title: "mylab1"
 author: "chenpeng"
 date: "2024-07-01"
 output:
+  pdf_document:
+    latex_engine: xelatex
+    toc: true
   html_document:
     toc: true
     toc_float:
       collapsed: false
       smooth_scroll: true
     theme: lumen
+header-includes: 
+  - \usepackage{ctex}
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-```
-
-```{r, message = F, include=FALSE}
+options(htmltools.dir.version = FALSE)
 library(tidyverse)
 ```
 
@@ -67,7 +70,7 @@ plot(exp.draws[[1]], exp.draws[[3]], main = "Scatterplot of exp.draws.0.1 vs. ex
 
 Tip: pch determines the type of the point
 
-![pch对应图](https://img-blog.csdn.net/20160505151456877)
+![pch对应图](../../figures/pch.png)
 
 d.
 ```{r}

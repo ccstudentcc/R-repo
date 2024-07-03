@@ -9,6 +9,11 @@ output:
       collapsed: false
       smooth_scroll: true
     theme: lumen
+  pdf_document:
+    latex_engine: xelatex
+    toc: true
+header-includes: 
+  - \usepackage{ctex}
 ---
 
 ```{r setup, include=FALSE}

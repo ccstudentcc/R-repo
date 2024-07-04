@@ -3,21 +3,21 @@ title: "myHomework2"
 author: "chenpeng"
 date: "2024-07-03"
 output:
+  pdf_document:
+    latex_engine: xelatex
+    toc: true
   html_document:
     toc: true
     toc_float:
       collapsed: false
       smooth_scroll: true
     theme: lumen
-  pdf_document:
-    latex_engine: xelatex
-    toc: true
 header-includes: 
   - \usepackage{ctex}
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, tidy.opts=list(width.cutoff=40), tidy=TRUE, warning = F)
+knitr::opts_chunk$set(echo = TRUE, tidy.opts=list(width.cutoff=55), tidy=TRUE, warning = F)
 options(htmltools.dir.version = FALSE)
 library(tidyverse)
 library(DAAG)
